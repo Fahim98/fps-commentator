@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.mp4
+*.mov
+*.mkv
+!examples/
+/tmp/
+.pytest_cache/
+.ruff_cache/

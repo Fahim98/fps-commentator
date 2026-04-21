@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fps-commentator"
+version = "0.1.0"
+description = "Add AI voiceover commentary to FPS game clips"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "google-generativeai>=0.8.0",
+    "elevenlabs>=1.5.0",
+    "pydantic-settings>=2.0.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+    "mutagen>=1.47.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+]
+
+[project.scripts]
+fps-commentator = "cli:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
