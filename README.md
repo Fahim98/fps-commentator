@@ -64,16 +64,12 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
-Copy `.env.example` to `.env` and fill in your API keys:
-
-```bash
-cp .env.example .env
-```
+Create `.env` to and fill in your API keys:
 
 ```env
-ANTHROPIC_API_KEY=sk-ant-...
-GEMINI_API_KEY=AIza...
-ELEVENLABS_API_KEY=...
+ANTHROPIC_API_KEY=YOUR_API_KEY
+GEMINI_API_KEY=YOUR_API_KEY
+ELEVENLABS_API_KEY=YOUR_API_KEY
 ```
 
 ---
