@@ -4,7 +4,6 @@
 
 FPS Commentator analyzes your gameplay video, detects key events (kills, clutches, multi-kills), generates contextual commentary in a chosen persona, and mixes it into the final video with proper audio ducking.
 
-https://github.com/user-attachments/assets/placeholder-demo.gif
 
 ---
 
